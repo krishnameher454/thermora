@@ -5,8 +5,8 @@ from datetime import datetime
 from auth import login, logout, role_switcher
 from weather_service import get_current_weather, get_forecast, search_location
 from metrics_engine import calc_heat_index, calc_wbgt, classify_risk, get_advisory
-from components.header import render_header
-from components.gauges import heat_index_gauge, wbgt_gauge
+from header import render_header
+from gauges import heat_index_gauge, wbgt_gauge
 
 # Page configuration (dark theme background set via CSS in header)
 st.set_page_config(page_title="HeatAlert – SIH 2026 (MoES)", layout="wide")
