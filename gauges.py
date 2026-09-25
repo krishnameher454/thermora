@@ -1,6 +1,6 @@
 import plotly.graph_objects as go
 import streamlit as st
-from ..metrics_engine import classify_risk
+from metrics_engine import classify_risk
 
 def _gauge(value: float, label: str):
     tier_info = classify_risk(value)
